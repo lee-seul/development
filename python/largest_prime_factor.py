@@ -1,5 +1,5 @@
 # coding: utf-8
-# rargest_prime_factor.py
+# largest_prime_factor.py
 
 
 
@@ -11,9 +11,10 @@
 #
 #	return i
 
-l = []
 
-def find_rargest_prime(number,l):
+
+def find_rargest_prime(number):
+	l = []
 	n = 2
 	while number!=1:
 		if number % n == 0:
@@ -24,8 +25,7 @@ def find_rargest_prime(number,l):
 	l.sort()
 	return l
 
-find_rargest_prime(600851475143, l)
-print l[-1]
+print find_rargest_prime(600851475143)[-1]
 
 		
 
