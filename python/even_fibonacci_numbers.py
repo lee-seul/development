@@ -10,7 +10,7 @@ while(l[-1] < 4000000):
 	if l[-1] % 2 == 0:
 		total += l[-1]
 	
-print total
+print(total)
 
 
 

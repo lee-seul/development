@@ -25,7 +25,7 @@ def find_rargest_prime(number):
 	l.sort()
 	return l
 
-print find_rargest_prime(600851475143)[-1]
+print(find_rargest_prime(600851475143)[-1])
 
 		
 

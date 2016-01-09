@@ -9,6 +9,6 @@ def multiple_3_5(number):
 		elif (i % 5 == 0)and (i % 15 != 0):			
 			total += i
 			
-	print total
+	print(total)
 
 multiple_3_5(1000)
