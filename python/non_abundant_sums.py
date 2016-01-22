@@ -16,7 +16,7 @@ for i in range(12, 28124):
 	
 abundant_num = []
 for x in range(len(numbers)):
-	print(numbers[x])
+#	print(numbers[x])
 	for y in range(len(numbers)):
 #		print(numbers[x] + numbers[y])
 #		if numbers[x] <= numbers[y]:
@@ -37,11 +37,11 @@ for x in abundant_num:
 result = 0
 
 for k in range(1, 28124):
-#	if k not in abundant_num:
+	if k not in abundant_num:
 #		result += k
 	result += k
 print(result-abundant_sum)
-
+#print(result)
 
 #for k in range(1, 28124):
 #	print(k)
