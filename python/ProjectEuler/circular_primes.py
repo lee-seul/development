@@ -4,11 +4,13 @@
 from math import sqrt
 
 def is_prime(num):
-	for i in range(2, (int(sqrt(num)))+1):
-		if num % i == 0:
-			return False
-	return True
-
+	if num > 1:
+		for i in range(2, (int(sqrt(num)))+1):
+			if num % i == 0:
+				return False
+		return True
+	else:
+	  	return False
 
 def is_circular_prime(num):
 	num = str(num)
