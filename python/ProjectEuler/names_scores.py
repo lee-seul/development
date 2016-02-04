@@ -1,7 +1,7 @@
 # coding: utf-8
 # names_scores.py
 
-for i in open('names.txt'):
+for i in open('names_scores.txt'):
 	data = i.split(',')
 
 for i in range(len(data)):
