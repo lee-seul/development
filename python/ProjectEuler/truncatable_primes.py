@@ -1,7 +1,7 @@
 # coding: utf-8
 # truncatable_primes.py
 
-from circular_primes import is_prime
+from lib.primes import is_prime
 
 prime_list = []
 
