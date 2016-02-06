@@ -1,17 +1,7 @@
 # coding: utf-8
 # pentagon_numbers.py
 
-from math import sqrt
-
-def pentagon_num(num):
-	return int(num*(3*num-1)/2)
-
-
-def is_pentagon(num):
-	n = abs(num)
-	p =	(sqrt(1+24*n) +1)/6
-	return p == int(p)
-
+from lib.X_number import is_pentagon, pentagon_num
 
 pentagon_list = []
 
