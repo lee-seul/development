@@ -16,7 +16,7 @@ def is_goldbachs_number(num):
 				while(True):
 					c = n*(x**2)
 					if is_prime(num-c):
-						print(num-c, c)
+#						print(num-c, c)
 						return True
 					elif num <= c:
 						return False

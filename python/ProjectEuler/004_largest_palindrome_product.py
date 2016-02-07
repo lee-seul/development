@@ -1,5 +1,5 @@
 # coding: utf-8
-# largest_palindrome_product.py
+# 004_largest_palindrome_product.py
 
 num = 0
 l = []
@@ -12,6 +12,6 @@ for i in range(100,1000):
 			if num[0] == num[-1] and num[1] == num[-2] and num[2] == num[-3]:
 				l.append(num)
 
-l.sort()
-print(l[-1])
+
+print(max(l))
 		
