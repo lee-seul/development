@@ -23,20 +23,13 @@ l = "73167176531330624919225119674426574742355349194934\
 71636269561882670428252483600823257530420752963450"
 
 l = list(l)
-a = 0
-for i in l:
-	l[a] = int(i)
-	a += 1
-result = 0
-for i in range(len(l)):
-	total = 1
-	for j in range(13):
-		if i+j < len(l):
-			if l[i+j] == 0:
-				break
-			else:
-				total *= l[i+j]
-	if total > result:
-		result = total
+max_total = 1
 
-print(result)
+for i in range(len(l)-12):
+	total = 1
+	for j in range(0, 13):
+		total *= int(l[i+j])
+	if max_total < total:
+		max_total = total
+
+print(max_total)

@@ -1,27 +1,17 @@
 # coding: utf-8
-# prime_10001st.py
+# 007_prime_10001st.py
+
+from lib.primes import is_prime
 
 def find_prime(num):
-#l = []
-	i = 1
-	j = 1
-	r = 0
-	while(r<num):
-		i +=1
-		j = 1
-		while(True):
-			j += 1
-			if i % j != 0:
-				continue
-			elif i % j == 0:
-				if i == j:
-#					l.append(i)
-					r += 1
-					break
-				else:
-					break
-	return i
-#	return l	
+	prime_list = []
+	n = 1
+	while(len(prime_list)!=num):
+		n+=1
+		if is_prime(n):
+			prime_list.append(n)
+	return prime_list[-1]
+		
 		
 print(find_prime(10001))
 

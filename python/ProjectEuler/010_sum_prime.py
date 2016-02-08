@@ -1,15 +1,7 @@
 # coding: utf-8
 # sum_prime.py
 
-
-prime_list = [2]
-
-def is_prime(num):
-	for prime in prime_list:
-		if num % prime == 0:
-			return False
-	prime_list.append(num)
-	return True
+from lib.primes import is_prime
 			
 
 				
@@ -23,3 +15,5 @@ def sum_prime(num):
 
 
 print(sum_prime(2000000))
+
+
