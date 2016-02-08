@@ -18,15 +18,15 @@ def comparison_list(list1, list2, list3, list4):
 	l = []
 	l = list1 + list2 + list3 + list4
 	l.sort()
-	if l == list(set(l)):
+	l_set = list(set(l))
+	l_set.sort()
+	if l == l_set:
 		return True
 	else:
 		return False
 	
 n = 2
-
 while(True):
-	print(n)
 	p1 = check_duplication(ff(n))
 	p2 = check_duplication(ff(n+1))
 	p3 = check_duplication(ff(n+2))
