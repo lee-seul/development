@@ -14,3 +14,17 @@ def is_prime(num):
 
 
 
+def find_primes_factor(num):
+	l = []
+	n = 2
+	while num!=1:
+		if num % n == 0:
+			l.append(n)
+			num = num/n
+		else:
+			n += 1
+	return l
+
+
+
+
