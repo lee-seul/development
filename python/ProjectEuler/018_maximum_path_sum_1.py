@@ -1,5 +1,5 @@
 # coding: utf-8
-# maximum_path_sum_1.py
+# 018_maximum_path_sum_1.py
 
 st = '''75
 95 64

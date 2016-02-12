@@ -1,12 +1,12 @@
 # coding: utf-8
-# power_digit_sum.py
+# 016_power_digit_sum.py
 
 def two_power_sum(num):
 	two = str(2**num)
-	sum = 0
+	digit_total = 0
 	for x in two:
-		sum += int(x)
-	return sum
+		digit_total += int(x)
+	return digit_total
 
 
 print(two_power_sum(1000))

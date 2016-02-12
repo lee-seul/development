@@ -1,5 +1,5 @@
 # coding: utf-8
-# largest_sum.py
+# 013_largest_sum.py
 
 num_str = "37107287533902102798797998220837590246510135740250\
 46376937677490009712648124896970078050417018260538\
@@ -111,9 +111,10 @@ for j in range(len(num_list)):
 	num_list[j] = int(num_list[j])
 
 
-sum = 0
+total = 0
 for x in num_list:
-	sum += x
+	total += x
 
-sum = str(sum)
-print(sum[:10])
+print(str(total)[:10])
+
+

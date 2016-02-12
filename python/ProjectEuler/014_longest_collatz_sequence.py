@@ -1,5 +1,5 @@
 # coding: utf-8
-# longest_collatz_sequence.py
+# 014_longest_collatz_sequence.py
 
 #def collatz(num, count):
 #	count += 1
@@ -13,15 +13,12 @@
 
 def collatz(num):
 	count = 0
-	while(True):
+	while(num!=1):
 		count += 1
-		if num != 1:
-			if num % 2 ==0:
-				num = num/2
-			elif num % 2 == 1:
-				num = (num*3)+1
-		elif num == 1:
-			break
+		if num % 2 ==0:
+			num = num/2
+		elif num % 2 == 1:
+			num = (num*3)+1
 	return count
 
 
@@ -31,7 +28,7 @@ cnt = 0
 
 for i in range(100000, 1000001):
 	cnt = collatz(i)
-	print(cnt)
+#	print(cnt)
 	if cnt > result:
 		result = cnt
 		n = i

@@ -1,5 +1,5 @@
 # coding: utf-8
-# lattice_paths.py
+# 015_lattice_paths.py
 
 def lattice_paths(x, y):
 	result = 0

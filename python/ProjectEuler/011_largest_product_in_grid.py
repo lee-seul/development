@@ -1,5 +1,5 @@
 # coding: utf-8
-# largest_product_in_grid.py
+# 011_largest_product_in_grid.py
 
 l ="08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08\
  49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00\
@@ -27,8 +27,8 @@ l = l.split(' ')
 for i in range(len(l)):
 	l[i] = int(l[i])
 
-
 result = 0
+# 가로
 for i in range(len(l)-3):
 	total = 1
 	if i % 20 == 17 or i % 20 == 18 or i % 20 ==19:
@@ -38,6 +38,7 @@ for i in range(len(l)-3):
 		if result < total:
 			result = total
 
+# 세로
 for i in range(len(l)-60):
 	total = 1
 	for j in range(0,61,20):
@@ -45,6 +46,7 @@ for i in range(len(l)-60):
 		if result < total:
 			result = total
 
+# 좌에서 우로 대각선
 for i in range(len(l)-63):
 	total = 1
 	if i % 20 == 17 or i % 20 == 18 or i % 20 == 19:
@@ -54,6 +56,7 @@ for i in range(len(l)-63):
 		if result < total:
 			result = total
 
+# 우에서 좌로 대각선
 for i in range(len(l)-60):
 	total = 1
 	if i % 20 == 0 or i % 20 == 1 or i % 20 == 2:
@@ -62,11 +65,8 @@ for i in range(len(l)-60):
 		total *= l[i+j]
 		if result < total:
 			result = total
+
 print(result)
-
-
-
-
 
 
 

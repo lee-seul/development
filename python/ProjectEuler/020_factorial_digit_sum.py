@@ -1,5 +1,5 @@
 # coding: utf-8
-# factorial_digit_sum.py
+# 020_factorial_digit_sum.py
 
 def factorial(num):
 	result = 1
@@ -16,3 +16,5 @@ def digit_sum(num):
 	return total
 	
 print(digit_sum(factorial(100)))
+
+

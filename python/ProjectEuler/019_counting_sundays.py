@@ -1,5 +1,5 @@
 # coding: utf-8
-# counting_sundays.py
+# 019_counting_sundays.py
 
 year = 1901
 n =[6, 5, 4, 3, 2, 1, 0]

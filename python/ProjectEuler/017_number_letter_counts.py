@@ -1,41 +1,5 @@
 # coding: utf-8
-# number_letter_counts.py
-
-#from math import floor
-#
-#def number_to_letter(num):
-#	total = 0
-#	total2 = 0
-#	num_se = floor(num/10)
-#	num_qe = num % 10
-#	result1 = 0
-#	for i in letters:
-#		result1 += len(i)
-#	letters = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
-#	letters2 = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eightteen', 'nineteen']
-#	letters3 = ['twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety']
-#	if num < 10:
-#		for i in letters[:num]:
-#			total += len(i)
-#	elif num >= 10 and num < 20:
-#		for i in letters + letters2[:num]:
-#			total += len(i)
-#	elif num >= 20 and num < 100:
-#		for i in letters + letters2:
-#			total += len(i)
-#		for j in letters3[:num_se]:
-#			total += len(j)
-#		for k in letters[:num_qe]:
-#			total += len(k)
-#		total += result1 * (num_se - 2)
-#	elif num > 100 and num < 1000:
-#		for i in letters + letters2:
-#			total += len(i)
-#		for j in letters3:
-#			total += len(j)
-#		total += result * 8
-#		if num == 100:
-#			total += 10
+# 017_number_letter_counts.py
 
 from math import floor
 
@@ -67,11 +31,10 @@ def num_to_letter(num):
 		return 'one thousand'
 
 
-
 result = 0
 for i in range(1, 1001):
 	result += len(str(num_to_letter(i)).replace(' ', '').replace('-', ''))
-#	print(str(num_to_letter(i)).replace(' ','').replace('-', ''))
+
 print(result)
 
 
