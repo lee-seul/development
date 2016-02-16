@@ -3,8 +3,12 @@
 
 from math import sqrt
 
-def triangle_num(num):
-	return (num*(num+1))/2
+def num_3(num):
+	return int((num*(num+1))/2)
+
+
+def num_4(num):
+	return num**2
 
 
 def is_pentagon(num):
@@ -13,7 +17,7 @@ def is_pentagon(num):
 	return p == int(p)
 
 
-def pentagon_num(num):
+def num_5(num):
 	return int(num*(3*num-1)/2)
 
 def is_hexagon(num):
@@ -22,4 +26,13 @@ def is_hexagon(num):
 	return p == int(p)
 
 
+def num_6(num):
+	return num*(2*num-1)
+
+
+def num_7(num):
+	return int((num*(5*num-3))/2)
+
+def num_8(num):
+	return num*(3*num-2)
 
