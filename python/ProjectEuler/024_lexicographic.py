@@ -1,5 +1,5 @@
 # coding: utf-8
-# lexicographic.py
+# 024_lexicographic.py
 
 string = '0123456789'
 

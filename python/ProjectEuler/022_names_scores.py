@@ -1,11 +1,9 @@
 # coding: utf-8
-# names_scores.py
+# 022_names_scores.py
 
-for i in open('names_scores.txt'):
-	data = i.split(',')
+f = open('names_scores.txt')
 
-for i in range(len(data)):
-	data[i] = data[i].replace('"', '')
+data = f.read().replace('"','').split(',')
 
 data.sort()
 
