@@ -11,7 +11,7 @@ def make_triangle_number(num):
 		n+=1
 	return result_list
 
-f = 'coded_triangle_numbers.txt'
+f = '042_coded_triangle_numbers.txt'
 
 for words in open(f):
 	data = words.split(',')

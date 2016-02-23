@@ -23,7 +23,7 @@ while(True):
 	tri_num += num
 	num += 1
 	if count_divisor(tri_num) > 500:
-		print(tri_num)
+#		print(tri_num)
 		break
 	print(count_divisor(tri_num))
 		

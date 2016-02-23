@@ -17,7 +17,7 @@ result_ex = 0
 x = 0 
 result = 0
 for i in range(-999, 1000):
-	print(i)
+#	print(i)
 	for j in range(-999, 1000):
 		n = 0
 		while(True):
