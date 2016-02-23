@@ -2,7 +2,6 @@
 # 072_counting_fractions.py
 
 
-
 def count_fraction(n):
 	num = [i for i in range(n+1)]
 	for i in range(2, n+1):
