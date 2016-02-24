@@ -1,28 +1,21 @@
 # coding: utf-8
-# digit_factorials.py
+# 034_digit_factorials.py
 
-def factorials(num):
-	total = 1
-	for i in range(1, num+1):
-		total *= i
-	return total
+from lib.permutation_combinations import factorial
 
 
-def num_to_list(num):
-	num =  list(str(num))
-	for i in range(len(num)):
-		num[i] = int(num[i])
-	return num
+def digit_factorial_sum(num):
+	digit_sum  = sum([factorial(int(i)) for i in list(str(num))])
+	return num == digit_sum
 
-result = []
 
-for i in range(3, 362880):
-	fac_total = 0
-	for j in num_to_list(i):
-		fac_total += factorials(j)
-	if i == fac_total:
-		result.append(i)
-	
-print(sum(result))
+result = 0
+
+for i in range(3, 2540161):
+	if digit_factorial_sum(i):
+		result += i
+
+print(result)
+
 
 

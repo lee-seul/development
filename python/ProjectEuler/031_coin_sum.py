@@ -1,5 +1,5 @@
 # coding: utf-8
-# coin_sum.py
+# 031_coin_sum.py
 
 
 coins = [1, 2, 5, 10, 20, 50, 100, 200]
@@ -13,6 +13,3 @@ for coin in coins:
 print(result[200])
 
 	
-
-
-

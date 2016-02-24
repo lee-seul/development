@@ -1,41 +1,30 @@
 # coding: utf-8
-# digit_cancelling_fractions.py
+# 033_digit_cancelling_fractions.py
 
 
 def digit_cancelling(num1, num2):
-	value = num1/num2
-	num3 = list(str(num1))
-	num4 = list(str(num2))
-	for i in num3:
-		if i in num4:
-			num3.remove(i)
-			num4.remove(i)
-			if value == int(num3[0])/int(num4[0]):
-				return [num1, num2]
-	else:
-	 	return False
+	cancel_num = set(str(num1))&set(str(num2))
+	if cancel_num:
+		cancel_num = list(cancel_num)[0]
+		a = list(str(num1))
+		a.remove(cancel_num)
+		b = list(str(num2))
+		b.remove(cancel_num)
+		return num1/num2 == int(a[0])/int(b[0])
+	return False
 
-result = []
+l = [i for i in range(10, 100) if i % 10 != 0]
 
-for i in range(10, 99):
-	for j in range(10, 99):
-		if i % 10 == 0 or j % 10 == 0:
-			continue
-		elif i >= j:
-			continue
-		else:
-			if digit_cancelling(i,j):
-				result.append(digit_cancelling(i,j))
+x = 1
+y = 1
+for i in l:
+	for j in l:
+		if i/j < 1 and digit_cancelling(i, j):
+			x *= i
+			y *= j
 
-total1 = 1
-total2= 1
-
-for i in range(len(result)):
-	total1 *= result[i][0]
-	total2 *= result[i][1]
-
-print(total1/total2)
-
+print(y/x)
+			
 
 
 

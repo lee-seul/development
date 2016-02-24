@@ -1,6 +1,5 @@
 # coding: utf-8
-# quadratic_primes.py
-
+# 027_quadratic_primes.py
 
 from math import fabs
 
@@ -10,7 +9,6 @@ def check_prime(num):
 		if num % i == 0:
 			return False
 	return True
-
 
 
 result_ex = 0

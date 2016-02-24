@@ -1,6 +1,7 @@
 # coding: utf-8
 # 023_non-abundant_sums.py
 
+
 def is_abundant(num):
 	divisor_sum = 0
 	for i in range(1, int((num/2)+1)):

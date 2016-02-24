@@ -1,5 +1,5 @@
 # coding: utf-8
-# reciprocal_cycles.py
+# 026_reciprocal_cycles.py
 
 def prime_factor(num):
 	l = []
@@ -11,25 +11,6 @@ def prime_factor(num):
 		else:
 			x+=1
 	return l
-
-
-#def unlimited_or_limited(num):
-#	while(True):
-#		if num != 1:
-#			if num % 2 == 0:
-#				num = int(num/2)
-#					return True
-#			elif num % 5 == 0:
-#				num = int(num/5)
-#			else:
-#				return False
-#		else:
-#			return True
-
-
-#def make_str(num):
-#	num = 1/num
-#	return str(num)[2:]
 
 
 def find_num(num):
@@ -67,15 +48,6 @@ for i in range(2, 1001):
  
 
 print(last_result)
-
-
-#for i in range(2, 1001):
-#	if not unlimited_or_limited(i):
-#		if 2 not in prime_factor(i) and 5 not in prime_factor(i): #첫째자리부터 순환 시작 하는 경우
-#															   
-#		else:
-
-
 
 
 
