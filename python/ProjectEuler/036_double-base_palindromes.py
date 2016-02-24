@@ -1,25 +1,19 @@
 # coding: utf-8
-# double-base_palindromes.py
+# 036_double-base_palindromes.py
 
 
-def check_palindrome(num):
+def is_palindrome(num):
 	num = str(num)
-	length = len(num)
-	if num[0] == '0':
-		num = num[2:]
-		length = length-2
-	for i in range(int(length/2)):
-		if num[i] != num[length-1-i]:
-			return False
-	return True
+	return num == num[::-1]
 
-sum = 0
+
+total = 0
 
 for i in range(1, 1000001):
-	if check_palindrome(i) and check_palindrome(bin(i)):
-		sum += i
+	if is_palindrome(i) and is_palindrome(bin(i)[2:]):
+		total += i
 
-print(sum)
+print(total)
 				
 
 

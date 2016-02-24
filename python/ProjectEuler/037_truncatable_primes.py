@@ -1,5 +1,5 @@
 # coding: utf-8
-# truncatable_primes.py
+# 037_truncatable_primes.py
 
 from lib.primes import is_prime
 
@@ -22,7 +22,5 @@ while(len(prime_list)<11):
 	num += 1
 
 print(sum(prime_list))
-
-
 
 
