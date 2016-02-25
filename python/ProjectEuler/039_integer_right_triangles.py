@@ -1,34 +1,32 @@
 # coding: utf-8
-# integer_right_triangles.py
+# 039_integer_right_triangles.py
+
+from math import sqrt
+
+result = []
+
+p = 1000
+for a in range(1, 500):
+	for b in range(1, 500):
+		c = sqrt(a**2 + b**2)
+		if c == int(c) and a+b+c <= p:
+			result.append(a+b+c)
+		
+count = {}
+
+for num in result:
+	count[num] = result.count(num)
 
 
-result_dic = {}
+key_list = list(count.keys())
 
-for p in range(3, 1001):
-	result_list = []
-	print(p)
-	for b in range(1, p):
-		for a in range(1, p-b):
-			c = p-(a+b)
-			if c < a or c < b:
-				break
-			elif a > b:
-				break
-			elif c **2 == a**2 + b**2:
-				result_list.append([a, b, c])
-	result_dic[p] = len(result_list)
-
-
-key_list = list(result_dic.keys())
-max_value = 0
-result = 0
+max_result = 0
+max_p = 0
 for key in key_list:
-	if max_value < result_dic[key]:
-		max_value = result_dic[key]
-		result = key
+	if max_result < count[key]:
+		max_result = count[key]
+		max_p = key
 
-print(result)
-
-
+print(int(max_p))
 
 

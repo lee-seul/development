@@ -3,6 +3,11 @@
 
 from math import sqrt
 
+def is_triangle(num):
+	n = abs(num)
+	p = (sqrt(1+n*8)-1)/2
+	return p == int(p)
+
 def num_3(num):
 	return int((num*(num+1))/2)
 

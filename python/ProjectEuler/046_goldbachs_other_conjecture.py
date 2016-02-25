@@ -1,5 +1,5 @@
 # coding: utf-8
-# goldbachs_other_conjecture.py
+# 046_goldbachs_other_conjecture.py
 
 from lib.primes import is_prime
 

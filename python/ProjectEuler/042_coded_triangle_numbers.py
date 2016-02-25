@@ -1,46 +1,29 @@
 # coding: utf-8
-# coded_triangle_numbers.py
+# 042_coded_triangle_numbers.py
 
-def make_triangle_number(num):
-	result_list = []
-	n = 1
-	tri_num = 0
-	while(tri_num < num):
-		tri_num = n/2*(n+1)
-		result_list.append(int(tri_num))
-		n+=1
-	return result_list
+from lib.X_number import is_triangle
 
-f = '042_coded_triangle_numbers.txt'
 
-for words in open(f):
-	data = words.split(',')
+data = open('042_coded_triangle_numbers.txt').read().replace('"', '').split(',')
 
-for i in range(len(data)):
-	data[i] = data[i].replace('"', '')
 
 dic = {'A':1, 'B':2,'C':3, 'D': 4, 'E':5, 'F':6, 'G':7, 'H':8, 'I':9,
 	   'J':10, 'K':11, 'L':12, 'M':13, 'N':14, 'O':15, 'P':16, 'Q':17,
 	   'R':18, 'S':19, 'T':20, 'U':21, 'V':22, 'W':23, 'X':24,'Y':25,
 	   'Z':26}
 
-word_value = []
+keys_list = list(dic.keys())
 
+
+count = 0
 
 for word in data:
 	total = 0
 	for x in word:
-		total += dic[x]
-	word_value.append(total)
-
-tri_num_list = make_triangle_number(max(word_value))
-
-result = 0
-for value in word_value:
-	if value in tri_num_list:
-		result+=1
-
-print(result)
-
-
+		if x in keys_list:
+			total += dic[x]
+	if is_triangle(total):
+		count+= 1
+	
+print(count)
 

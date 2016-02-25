@@ -5,10 +5,8 @@ from itertools import permutations
 from lib.primes import is_prime
 
 def make_pandigital(num):
-	l = []
-	for i in range(1, num+1):
-		l.append(i)
-	permut_list = list(permutations(l, len(l)))
+	l = [i for i in range(1, num+1)]
+	permut_list = list(permutations(l, ))
 	result_list = []	
 	for permutation in permut_list:
 		string = ''

@@ -1,5 +1,5 @@
 # coding: utf-8
-# pandigital_multiples.py
+# 038_pandigital_multiples.py
 
 
 def plus_string(string_list):
@@ -12,10 +12,8 @@ def check_pandigital(num):
 	num = list(str(num))
 	num.sort()
 	standard_list = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
-	if num == standard_list:
-		return True
-	else:
-		return False
+	return num == standard_list
+
 
 result_list = []
 
@@ -34,3 +32,5 @@ for number in range(1, 10000):
 		
 
 print(max(result_list))
+
+

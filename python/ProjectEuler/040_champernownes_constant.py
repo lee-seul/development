@@ -1,28 +1,20 @@
 # coding: utf-8
-# champernownes_constant.py
+# 040_champernownes_constant.py
 
 
-def champernownes(number):
-	result = '0.'
-	num = 1
-	while(len(result)<=number+2):
-		result += str(num)
-		num+=1
-	return int(result[number+1])
+result = '0.'
+num = 1
+while(len(result)<=10**7+2):
+	result += str(num)
+	num+=1
 
-	
+
+n_list = [10**i for i in range(7)]
+
 total = 1
-
-l = [1, 10, 100, 1000, 10000, 100000, 1000000]
-
-for i in l:
-	total *= champernownes(i)
+for n in n_list:
+	total *= int(result[n+1])
 
 print(total)
-
-
-
-
-
 
 

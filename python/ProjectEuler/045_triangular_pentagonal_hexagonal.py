@@ -1,5 +1,5 @@
 # coding: utf-8
-# triangular_pentagonal_hexagonal.py
+# 045_triangular_pentagonal_hexagonal.py
 
 from lib.X_number import num_3, is_pentagon, is_hexagon
 
@@ -11,7 +11,6 @@ while(True):
 		print(tri_num)
 		break
 	n += 1
-
 
 
 

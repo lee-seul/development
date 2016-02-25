@@ -1,9 +1,7 @@
 # coding: utf-8
-# sub_string_divisibility.py
-
+# 043_sub_string_divisibility.py
 
 from itertools import permutations
-
 
 number = '1234567890'
 pm_list = list(permutations(number))
