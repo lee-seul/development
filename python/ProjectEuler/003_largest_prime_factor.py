@@ -1,7 +1,6 @@
 # coding: utf-8
 # 003_largest_prime_factor.py
 
-
 def find_largest_prime(number):
 	l = []
 	n = 2
@@ -16,4 +15,3 @@ def find_largest_prime(number):
 print(find_largest_prime(600851475143))
 
 		
-

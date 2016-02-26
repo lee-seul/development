@@ -3,7 +3,6 @@
 
 from lib.primes import is_prime
 
-
 x = 1
 for i in range(2, 21):
 	if is_prime(i):
@@ -25,7 +24,6 @@ while(True):
 		break
 	else:
 		x += 20
-
 
 
 	

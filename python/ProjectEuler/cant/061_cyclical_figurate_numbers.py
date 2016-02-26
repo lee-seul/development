@@ -4,6 +4,12 @@
 from lib.X_number import num_3, num_4, num_5, num_6, num_7, num_8
 
 
+
+l = [[str(i)[:2], str(i)[2:] for i in range(1000, 10000)]
+
+
+
+
 def is_4_digit(num):
 	return len(str(num)) == 4
 

@@ -1,5 +1,17 @@
 # coding: utf-8
-# 054_poker_hands.py
+# poker_rule.py
+
+
+class poker():
+	cards = {'2':1, '3':2, '4':3, '5':4, '6':5, '7':6, '8':7, '9':8,'T':9,'J':10, 'Q':11, 'K':12, 'A':13}
+	def __init__(self, game):
+		player1 = self.game[:5]
+		player2 = self.game[5:]
+		
+	def flush(self):
+		suits = self.suits
+		return ssuits
+
 
 
 def flush(suits):
@@ -102,32 +114,5 @@ def poker(player_card):
 		return 1000 + one_pair(number_cards) 
 	else:
 		return high_card(number_cards)	
-
-
-
-
-f = open('054_poker.txt')
-win = 0
-player1 = []
-player2 = []
-for i in f.readlines():
-	player1 = i.split(' ')[:5]
-	player2 = i.split(' ')[5:]
-	print(player1, poker(player1), player2, poker(player2))
-	if poker(player1) > poker(player2):
-		win += 1
-	elif poker(player1) == poker(player2):
-#		print(player1, poker(player1), player2, poker(player2))
-		p_1 = []
-		p_2 = []
-		for i in range(0, 4):
-			p_1.append(player1[i][0])
-			p_2.append(player2[i][0])
-		if high_card(p_1) > high_card(p_2):
-			win +=1
-print(win)
-
-		
-	
 
 

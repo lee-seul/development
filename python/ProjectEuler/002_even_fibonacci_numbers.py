@@ -1,7 +1,6 @@
 # coding: utf-8
 # 002_even_fibonacci_numbers.py
 
-
 l = [1, 1]
 total = 0 
 
