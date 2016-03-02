@@ -2,16 +2,15 @@
 # poker_rule.py
 
 
-class poker():
-	cards = {'2':1, '3':2, '4':3, '5':4, '6':5, '7':6, '8':7, '9':8,'T':9,'J':10, 'Q':11, 'K':12, 'A':13}
-	def __init__(self, game):
-		player1 = self.game[:5]
-		player2 = self.game[5:]
-		
-	def flush(self):
-		suits = self.suits
-		return ssuits
-
+#class poker():
+#	cards = {'2':1, '3':2, '4':3, '5':4, '6':5, '7':6, '8':7, '9':8,'T':9,'J':10, 'Q':11, 'K':12, 'A':13}
+#	def __init__(self, game):
+#		player1 = self.game[:5]
+#		player2 = self.game[5:]
+#		
+#	def flush(self):
+#		suits = self.suits
+#		return ssuits
 
 
 def flush(suits):
