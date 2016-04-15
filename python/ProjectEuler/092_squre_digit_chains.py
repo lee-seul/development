@@ -4,6 +4,7 @@
 def digit_square_sum(num):
 	return sum([int(i)**2 for i in str(num)])
 
+
 def make_list(num):
 	limit = 9**2 * len(str(num))
 	result_list = []
