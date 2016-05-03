@@ -3,7 +3,6 @@
 
 from lib.primes import is_prime
 
-
 def is_prime_pair(prime1, prime2):
 	prime1 = str(prime1)
 	prime2 = str(prime2)
@@ -12,15 +11,12 @@ def is_prime_pair(prime1, prime2):
 	else:
 		return False
 
-
-
 prime_list = []
 for i in range(2, 10000):
 	if is_prime(i):
 		prime_list.append(i)
 
 prime_pair_list = []
-
 
 for prime1 in prime_list:
 	prime_pair = [prime1]
@@ -45,8 +41,6 @@ for prime1 in prime_list:
 		prime_pair.sort()
 		prime_pair_list.append(prime_pair)
 
-
-
 total_list = []
 for pair_list in prime_pair_list:
 	total = 0
@@ -55,7 +49,4 @@ for pair_list in prime_pair_list:
 	total_list.append(total)
 
 print(min(total_list))
-
-				
-
 
