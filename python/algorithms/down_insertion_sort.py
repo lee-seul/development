@@ -1,7 +1,7 @@
 # coding: utf-8
-# isertion_sort.py
+# down_isertion_sort.py
 
-# 삽입 정렬(오름 차순)
+# 삽입 정렬 (내림 차순)
 
 import time
 
@@ -20,7 +20,7 @@ def sort_list(num_list):
     for i in range(1, len(num_list)):
         key = num_list[i]
         j = i - 1
-        while j > 0 and num_list[j] > key:
+        while j >= 0 and num_list[j] < key:
             num_list[j+1] = num_list[j]
             j = j - 1
         num_list[j+1] = key
