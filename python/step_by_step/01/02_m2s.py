@@ -1,5 +1,4 @@
 # coding: utf-8
-# 01_002_m2s.py
 
 def m2s():
     a = int(input())

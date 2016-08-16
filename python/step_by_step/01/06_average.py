@@ -1,5 +1,4 @@
 # coding: utf-8
-# 01_006_average.py
 
 def average():
     a, b, c, d = map(int, input().split())

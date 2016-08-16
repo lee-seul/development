@@ -1,5 +1,4 @@
 # coding: utf-8
-# 01_010_sec.py
 
 def sec():
     a = int(input())

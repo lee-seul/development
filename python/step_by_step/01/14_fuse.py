@@ -1,5 +1,4 @@
 # coding: utf-8
-# 01_014_fuse.py
 
 def fuse():
     a, b, c = map(int, input().split())

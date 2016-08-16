@@ -1,10 +1,8 @@
 # coding: utf-8
-# 01_016_r2.py
 
-def r2():
+def mul():
     a, b = map(int, input().split())
-    print(2 * b - a)
+    print(a * b)
 
-r2()
-
+mul()
 

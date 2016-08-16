@@ -1,5 +1,4 @@
 # coding: utf-8
-# 01_004_op.py
 
 def op():
     a, b = map(int, input().split())

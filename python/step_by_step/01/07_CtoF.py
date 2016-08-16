@@ -1,5 +1,4 @@
 # coding: utf-8
-# 01_007_CtoF.py
 
 def CtoF():
     a = int(input())

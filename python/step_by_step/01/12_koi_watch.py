@@ -1,5 +1,4 @@
 # coding: utf-8
-# 01_012_koi_watch.py
 
 def koi_watch():
     a, b, c = map(int, input().split())

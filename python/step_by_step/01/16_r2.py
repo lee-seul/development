@@ -1,9 +1,9 @@
 # coding: utf-8
-# 01_001_area.py
 
-def mul():
+def r2():
     a, b = map(int, input().split())
-    print(a * b)
+    print(2 * b - a)
 
-mul()
+r2()
+
 

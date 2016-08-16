@@ -1,5 +1,4 @@
 # coding: utf-8
-# 01_003_swap.py
 
 def swap():
     a, b = map(int, input().split())

@@ -1,5 +1,4 @@
 # coding: utf-8
-# 01_011_three.py
 
 def three():
     a = int(input())

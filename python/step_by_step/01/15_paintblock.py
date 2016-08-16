@@ -1,5 +1,4 @@
 # coding: utf-8
-# 01_015_paintblock.py
 
 def paintblock():
     a, b, c = map(int, input().split())
