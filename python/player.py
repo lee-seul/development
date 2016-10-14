@@ -1,5 +1,6 @@
 import time
 
+
 def show_me_the_hand(records):
     l = []
     value = ['bawi', 'bo', 'gawi']
@@ -11,7 +12,6 @@ def show_me_the_hand(records):
 #            print(count)
             for j in range(len(count)):
                 if max(count) == count[j]:
-#                    print(j, max(count))
                     return value[j] 
     else:
         return value[int(time.time()) % 3]          
