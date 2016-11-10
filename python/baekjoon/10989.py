@@ -1,16 +1,15 @@
 # coding: utf-8
 
+import sys
+write = sys.stdout.write
+read = sys.stdin.readline
+
 # 카운팅 소트
 l = [0 for i in range(10001)]
-n = int(input())
+n = int(read())
 
 for i in range(n):
-    num = int(input())
-    l[num] += 1
-loop = [i for i in range(1, 10001) if l[i] >0]
+    l[int(read())] += 1
 
-for index in loop:
-    s = ""
-    s += (str(index) + "\n") * l[index]
-    print(s, end="")
-
+for index in range(1, 10001):
+    write((str(index)+"\n") * l[index])
